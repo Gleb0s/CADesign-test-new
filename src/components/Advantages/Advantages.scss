@@ -1,0 +1,150 @@
+.advantages{
+    margin-top: 75px;
+}
+
+.advantages__first{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.advantages__second{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #EDEDED;
+}
+
+.advantages__block{
+    width: 33.333%;
+    border: 1px solid #EDEDED;
+    padding: 125px 155px;
+
+
+    &:nth-child(1) {
+        border-right: 0;
+        border-bottom: 0;
+    }
+    &:nth-child(2) {
+        border-right: 0;
+        border-bottom: 0;
+    }
+    &:nth-child(3) {
+        border-bottom: 0;
+    }
+
+}
+
+.advantages__block-active{
+    width: 33.333%;
+    padding-top: 90px;
+    padding-bottom: 75px;
+    border-left: 1px solid #EDEDED;
+    border-top: 1px solid #EDEDED;
+    box-shadow: 1px 4px 20px 1px #646464 ;
+    background: #fff;
+}
+
+.advantages__block-icon{
+    margin-bottom: 50px;
+}
+
+.advantages__block-text{
+    font-size: 20px;
+
+    &:nth-last-child(1) {
+        width: 200px;
+        margin-left: -55px;
+    }
+}
+
+.advantages__block-description{
+    padding-top: 35px;
+    color: #646464;
+    font-size: 16px;
+    width: 302px;
+    margin: 0 auto;
+
+}
+
+@media (max-width: 1250px){
+
+}
+
+// 768px
+
+@media (max-width: 768px) {
+
+    .advantages__first{
+        display: none;
+    }
+
+    .advantages__block-active{
+        width: 50%;
+        box-shadow: 0px 0px 10px 1px #646464
+    }
+
+    .advantages__block-active > .advantages__block-icon{
+        margin-left: 115px;
+        padding-top: 0px;
+    }
+
+    .advantages__block{
+        width: 50%;
+
+        &:nth-child(2){
+            border-right: 1px solid #EDEDED;
+        }
+    }
+
+    .advantages__block:nth-child(3){
+        display: none;
+    }
+
+    .advantages__block > .advantages__block-icon{
+        padding-right: 50px;
+    }
+
+    .advantages__block-icon{
+        height: 87px;
+        width: 133px;
+    }
+
+    .advantages__block-description{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .ellipses{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .ellipses__first, .ellipses__third{
+            width: 15px;
+            height: 15px;
+            background: #E0E0E0;
+            border-radius: 50%;
+            cursor: pointer;
+
+            &:nth-child(1){
+                margin-right: 40px;
+            }
+    }
+
+    .ellipses__second{
+        cursor: pointer;
+        width: 15px;
+        height: 15px;
+        background: var(--orange-color);
+        border-radius: 50%;
+        margin-right: 40px;
+}
+}
+
+@media (max-width: 576px){
+    .advantages{
+        display: none;
+    }
+}

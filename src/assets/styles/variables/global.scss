@@ -1,0 +1,29 @@
+:root {
+    --container-body: 1192px;
+    --container-768: 688px;
+
+    // Banner
+    --banner-height: 400px;
+
+    // Colors
+    --white-color: #fff;
+    --orange-color: #E9862A;
+    --blue-color: #187CD3;
+    --main-blue-color: #003264;
+    --gray-color: #C3C8C8;
+    --stroke-color: #EBEBEB;
+    --dark-color: #242627;
+
+    // Transition
+
+    --transition: transform 0.3s linear;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+
+@mixin tablet () {
+
+}

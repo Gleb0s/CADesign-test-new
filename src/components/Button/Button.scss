@@ -1,0 +1,35 @@
+.button{
+    padding: 28px 35px;
+    background-color: var(--orange-color);
+    font-weight: 700;
+    color: var(--white-color);
+
+    &:hover{
+        scale: 1.1;
+        transition: 0.3s ease-in;
+        border: 1px solid #fff;
+    }
+}
+
+@media (max-width: 768px){
+    .button{
+        padding: 25px 35px;
+        margin-left: 12px;
+    }
+}
+
+@media (max-width: 576px){
+    .button{
+        position: relative;
+        padding: 25px 30px;
+        margin-left: 70px;
+        margin-top: 140px;
+        z-index: 5;
+    }
+}
+
+@media (max-width: 320px){
+    .button{
+        margin-left: 35px;
+    }
+}
