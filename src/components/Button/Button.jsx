@@ -1,8 +1,21 @@
+
 import "./Button.scss";
 
-const Button = () => {
+
+const Button = ({setModalInfoOpen}) => {
+
+
+
     return (
-        <button type="button" className="button">Стать частью команды</button>
+    <div>
+        <button
+        type="button"
+        className="button"
+        onClick={() => setModalInfoOpen(true)}
+        >Стать частью команды</button>
+
+    </div>
+
      );
 }
 

@@ -3,6 +3,7 @@
     background-color: var(--orange-color);
     font-weight: 700;
     color: var(--white-color);
+    z-index: 500;
 
     &:hover{
         scale: 1.1;

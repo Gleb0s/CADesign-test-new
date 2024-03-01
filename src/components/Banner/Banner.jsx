@@ -1,15 +1,16 @@
+import { Button } from "../Button/Button";
 import "./Banner.scss";
 import humans from "@/assets/img/humans.png"
-import { Button } from "../Button/Button";
 
-const Banner = () => {
+
+const Banner = ({setModalInfoOpen}) => {
     return (
         <div className="banner">
             <div className="container">
                 <div className="banner__wrapper">
                     <div className="banner__info">
                         <h1 className="banner__info-title">Энергия твоего роста! – заряжаем твою карьеру</h1>
-                        <Button/>
+                        <Button setModalInfoOpen={setModalInfoOpen} />
                         <div className="banner__images-humans">
                             <img className="banner__images-humans-photo" src={humans} alt="humans" />
                         </div>

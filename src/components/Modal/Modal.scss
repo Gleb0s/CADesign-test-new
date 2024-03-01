@@ -1,0 +1,61 @@
+.modal{
+    padding: 100px 0;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.50);
+    // opacity: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    transition: opacity 0.3s;
+    z-index: 999;
+}
+
+.modal__wrapper{
+    padding: 100px 100px;
+    background-color: #fff;
+    width: 1145px;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 300;
+}
+
+.x{
+    position: absolute;
+    top: 150px;
+    right: 100px;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    background-color: var(--orange-color);
+    overflow: hidden;
+    z-index: -1;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.list-item-bg{
+    background: #e9862a17;
+    padding: 5px 10px;
+}
