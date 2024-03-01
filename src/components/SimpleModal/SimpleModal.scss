@@ -11,7 +11,7 @@
     z-index: 999;
 }
 
-.modal-wrapper{
+.modal__wrapper{
     position: absolute;
     top: 100px;
     left: 0;
@@ -22,7 +22,7 @@
     min-height: 100%;
 }
 
-.modal-content{
+.modal__content{
     position: relative;
     margin: 20px;
     width: 80%;

@@ -1,0 +1,22 @@
+.confidecial{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 65px;
+
+    background-color: #fff;
+    z-index: 9999;
+    top: 80%;
+}
+.confidecial__text{
+    width: 70%;
+}
+
+.confidecial__button{
+    padding: 20px 35px;
+    background-color: var(--orange-color);
+    font-weight: 700;
+    color: var(--white-color);
+    cursor: pointer;
+}

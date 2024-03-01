@@ -7,8 +7,8 @@ const SimpleModal = ({isOpen, onClose, children}) => {
 <>
     {isOpen && (
         <div className="modal">
-                <div className="modal-wrapper">
-                    <div className="modal-content">
+                <div className="modal__wrapper">
+                    <div className="modal__content">
                     <button onClick={()=> onClose()} className="modal-close-button">
                     <X className="x"/>
                     </button>

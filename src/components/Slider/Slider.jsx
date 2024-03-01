@@ -5,7 +5,7 @@ import LefttArrow from "@/assets/img/left-arrow.svg?react";
 
 const Slider = () => {
     return (
-        <article className="director-bg">
+        <section className="director-bg">
             <div className="container">
                 <div className="director">
                     <div className="director__info">
@@ -32,7 +32,7 @@ const Slider = () => {
                     <div className="ellipses__third"></div>
                 </div>
             </div>
-        </article>
+        </section>
      );
 }
 
