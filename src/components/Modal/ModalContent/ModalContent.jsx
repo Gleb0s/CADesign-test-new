@@ -1,13 +1,13 @@
 import "./ModalContent.scss";
 
-const ModalContent = () => {
+const ModalContent = ({setmodalFormIsOpen}) => {
     return (
 <>
     <div className="container">
         <div className="modal__header">
             <h2 className="modal__header-title">Бухгалтер по расчету заработной платы </h2>
             <div className="modal__header-text">от 30 000 до 60 000 руб. до вычета налогов</div>
-            <button className="modal-btn" type="button">Откликнуться</button>
+            <button onClick={() => setmodalFormIsOpen(true)} className="modal-btn" type="button">Откликнуться</button>
         </div>
         <div className="modal__main">
             <div className="modal__main-1">
@@ -50,7 +50,7 @@ const ModalContent = () => {
             </div>
 
             <p className="modal__main-footer-text">Вакансия добавлена 16 февраля 2020</p>
-            <button className="modal-btn" type="button">Откликнуться</button>
+            <button onClick={() => setmodalFormIsOpen(true)} className="modal-btn" type="button">Откликнуться</button>
         </div>
     </div>
 </>

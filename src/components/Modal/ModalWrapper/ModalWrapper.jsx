@@ -1,7 +1,7 @@
-import "./SimpleModal.scss";
+import "./ModalWrapper.scss";
 import X from "@/assets/img/icons/x.svg?react";
 
-const SimpleModal = ({isOpen, onClose, children}) => {
+const ModalWrapper = ({isOpen, onClose, children}) => {
     return (
 
 <>
@@ -21,4 +21,4 @@ const SimpleModal = ({isOpen, onClose, children}) => {
      );
 }
 
-export {SimpleModal};
+export {ModalWrapper};
