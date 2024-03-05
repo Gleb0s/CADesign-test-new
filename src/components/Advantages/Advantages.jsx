@@ -19,10 +19,7 @@ const firstBlock = [
     {   id: 3,
         icon: <Fird/>,
         text: "Ответственность",
-    }
-]
-
-const secondBlock = [
+    },
     {   id: 4,
         icon: <Fourth/>,
         text: "Динамика",
@@ -38,17 +35,7 @@ const secondBlock = [
     },
 ]
 
-const adv1 = firstBlock.map((item) => {
-    return (
-        <div key={item.id} className="advantages__block">
-            <div className="advantages__block-icon">{item.icon}</div>
-            <h3 className="advantages__block-text">{item.text}</h3>
-        </div>
-    )
-})
-
-const adv2 = secondBlock.map((item) => {
-
+const advantagesBlock = firstBlock.map((item) => {
     return (
         <div key={item.id} className={item.id === 4 ? "advantages__block-active" : "advantages__block"}>
             <div className="advantages__block-icon">{item.icon}</div>
@@ -58,15 +45,14 @@ const adv2 = secondBlock.map((item) => {
     )
 })
 
+
+
 const Advantages = () => {
     return (
         <section className="advantages">
             <div className="container">
                 <div className="advantages__first">
-                    {adv1}
-                </div>
-                <div className="advantages__second">
-                    {adv2}
+                    {advantagesBlock}
                 </div>
                 <div className="ellipses">
                     <div className="ellipses__first"></div>

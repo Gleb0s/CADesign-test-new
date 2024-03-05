@@ -6,10 +6,15 @@ import LefttArrow from "@/assets/img/left-arrow.svg?react";
 const Slider = () => {
     return (
         <section className="director-bg">
+                    <div className="arrows">
+                        <LefttArrow className="left-arrow"/>
+                        <RightArrow
+                        className="right-arrow"/>
+                    </div>
             <div className="container">
                 <div className="director">
                     <div className="director__info">
-                        <LefttArrow className="left-arrow"/>
+
                         <h3 className="director__info-name">
                         Евдокимова Майя
                         </h3>
@@ -22,8 +27,6 @@ const Slider = () => {
                     </div>
                     <div className="director__img">
                         <img src={director} alt="director" />
-                        <RightArrow
-                        className="right-arrow"/>
                     </div>
                 </div>
                 <div className="ellipses">

@@ -109,7 +109,7 @@
 
     // Menu slide
     .header__nav{
-        z-index: 90;
+        z-index: 1000;
         position: absolute;
         top: 0;
         left: -225px;
@@ -149,6 +149,11 @@
             color: var(--orange-color);
 
             font-weight: 700;
+        }
+
+        &:hover {
+            border-bottom: 0;
+            margin-bottom: 0;
         }
     }
 

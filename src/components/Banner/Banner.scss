@@ -7,7 +7,7 @@
 
 .banner__wrapper{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 60% 15% 25%;
 }
 .banner__info{
     width: 590px;
@@ -31,26 +31,46 @@
 .banner__triangle{
     position: relative;
     top: 0;
-    left: 0%;
+    left: 45%;
     background-color: var(--main-blue-color);
     clip-path: polygon(0% 0%, 50% 0, 100% 50%, 50% 100%, 0% 100%);
     height: 448px;
     z-index: 200;
 
-    @media (max-width: 1190px) {
+    @media (max-width: 1349px){
+        left: -5%;
+    }
+
+    @media (max-width: 1249px) {
+        left: 0%;
+    }
+
+    @media (max-width: 1249px) {
+        left: -10%;
+    }
+
+    @media (max-width: 1149px) {
         left: -20%;
     }
 
-    @media (max-width: 1135px) {
-        left: -50%;
-    }
-
-    @media (max-width: 1075px) {
-        left: -68%;
+    @media (max-width: 1049px) {
+        left: -30%;
     }
 
     @media (max-width: 1001px) {
-        left: -30%;
+        left: 110%;
+    }
+
+    @media (max-width: 951px) {
+        left: 70%;
+    }
+
+    @media (max-width: 851px) {
+        left: 50%;
+    }
+
+    @media (max-width: 768px) {
+        height: var(--banner-height);
     }
 }
 
@@ -58,7 +78,7 @@
     position: absolute;
     top: 0px;
     right: 0px;
-    width: 600px;
+    width: 460px;
     background-image: url("@/assets/img/building.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -66,11 +86,15 @@
     height: 448px;
 
     @media (max-width: 1135px) {
-        width: 550px;
+        width: 450px;
     }
 
     @media (max-width: 1001px) {
-        width: 450px;
+        width: 250px;
+    }
+
+    @media (max-width: 768px) {
+        height: var(--banner-height);
     }
 }
 
@@ -82,22 +106,40 @@
     z-index: 210;
     overflow: hidden;
 
-    @media (max-width: 1190px) {
-        right: 50px;
+    @media (max-width: 1249px){
+        right: -40px;
     }
 
-    @media (max-width: 1135px) {
-        right: 0px;
+    @media (max-width: 1049px) {
+        right: -100px;
     }
 
     @media (max-width: 1001px) {
-        right: -70px;
+        right: -20%;
+        padding-right: 30px;
+        width: 80%;
+    }
+
+    @media (max-width: 898px) {
+        right: -20%;
+        width: 65%;
+        top: 22%;
+    }
+
+    @media (max-width: 768px) {
+        top: 26%;
     }
 }
 
-// screen 1260
+// screen 1249
 
-@media (max-width: 1260px){
+@media (max-width: 1249px){
+
+
+}
+
+// 1049
+@media (max-width: 1049px){
 
 }
 
@@ -125,19 +167,17 @@
         left: 50px;
     }
 
-    .banner__images-humans{
-        position: relative;
-        top: 50px;
-        right: 0;
-        left: -130px;
-        z-index: 92;
-        width: 550px;
-        height: 400px;
-        overflow: hidden;
+    .banner__back{
+        width: 250px;
+        z-index: -1;
     }
 
     .banner__images{
         height: var(--banner-height);
+    }
+
+    .banner .container{
+        padding: 0;
     }
 }
 

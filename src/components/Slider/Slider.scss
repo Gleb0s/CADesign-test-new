@@ -1,6 +1,6 @@
 .director{
     display: flex;
-    margin-top: 70px;
+    margin-top: 0px;
     width: 100%;
     position: relative;
     justify-content: space-between;
@@ -9,14 +9,18 @@
 }
 
 .director-bg{
+    margin-top: 70px;
+    position: relative;
     background-color: #F7F7F7;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 55px;
+    margin-right: 85px;
+    width: 90%;
 }
 
 .director__info{
     width: 50%;
     position: relative;
+    padding-left: 20px;
 }
 
 .director__info-name{
@@ -42,40 +46,56 @@
     margin-top: 100px;
 }
 
-.left-arrow{
+.arrows{
+    display: flex;
+    justify-content: space-between;
     cursor: pointer;
+
+}
+
+.left-arrow{
     position: absolute;
-    width: 60px;
-    height: 100px;
-    top: 40%;
-    left: -25%;
+    width: 52px;
+    height: 64px;
+    top: 50%;
+    left: -4%;
     border: 1px solid #242627;
-    padding: 40px 25px;
+    padding: 5px 20px;
+    background-color: #fff;
 }
 
 .right-arrow{
     position: absolute;
-    cursor: pointer;
-    width: 60px;
-    height: 100px;
-    top: 40%;
-    right: -10%;;
+    width: 52px;
+    height: 64px;
+    top: 50%;
+    right: -4%;
     border: 1px solid #242627;
-    padding: 40px 25px;
+    padding: 5px 20px;
     background-color: #fff;
 }
 
 
-// Media 768
+@media (max-width: 1249px){
+    .director__info-description{
+        font-size: 17px;
+    }
+}
 
-@media (max-width: 768px) {
+@media (max-width: 1049px){
     .director{
         margin-top: 50px;
         flex-direction: column-reverse;
     }
 
     .director__img{
-        margin-top: 30px;
+        margin-top: 0px;
+        margin-left: 5%;
+        margin-right: 25%;
+    }
+
+    .director__info-position{
+        margin-bottom: 30px;
     }
 
     .director-bg{
@@ -83,9 +103,11 @@
     }
 
     .director__info{
-        width: 100%;
+        width: 135%;
         background-color: #fff;
         text-align: center;
+        margin-left: -20%;
+
     }
 
     .director__info-name{
@@ -97,17 +119,43 @@
         width: 670px;
         font-size: 18px;
         line-height: 32px;
-
+        margin: 0 auto;
     }
 
     .right-arrow{
-        top: 20%;
+        top: 15%;
         right: 5%;
     }
 
     .left-arrow{
-        top: -63%;
+        top: 15%;
         left: 5%;
+    }
+
+    .director-bg .container .ellipses{
+        display: none;
+    }
+
+}
+
+// Media 768
+
+@media (max-width: 768px) {
+    .director__info{
+        margin-right: 20%;
+    }
+    .director__info-description{
+        font-size: 16px;
+        width: 550px;
+    }
+
+    .director__info-name{
+        font-size: 30px;
+    }
+
+    .director__info-position{
+        margin-bottom: 20px;
+        font-size: 15px;
     }
 }
 
